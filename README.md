@@ -21,7 +21,7 @@ I’m a graduate in Robotics and Automation with strong foundations in object-or
 [https://augustineaguworumba.github.io](https://augustineaguworumba.github.io)
 
 ## Contact  
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/augustine-aguworumba)  
-- GitHub: [github.com/yourusername](https://github.com/augustineaguworumba)  
-- Email: augustineaguworumba@gmail.com
+- LinkedIn: [linkedin.com/in/augustine-aguworumba](https://linkedin.com/in/augustine-aguworumba)  
+- GitHub: [github.com/augustineaguworumba](https://github.com/augustineaguworumba)  
+- Email: augustine.aguworumba@gmail.com
 
