@@ -6,49 +6,97 @@
   <title>Augustine Aguworumba | C++ Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
-      background: #007acc;
+      background: linear-gradient(90deg, #007acc, #005fa3);
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease-out;
     }
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      animation: fadeIn 1s ease-in;
     }
     h2 {
       color: #007acc;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     ul {
       padding-left: 1.2rem;
+      list-style: none;
     }
     li {
-      margin-bottom: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeUp 1s ease-in-out;
+    }
+    li:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
     }
     a {
       color: #007acc;
       text-decoration: none;
+      font-weight: 600;
     }
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
       background: #eee;
+      animation: fadeIn 2s ease-in;
+    }
+    .project-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p, li {
+        font-size: 0.95rem;
+      }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Augustine Aguworumba</h1>
-    <p>Graduate C++ Developer | Embedded Systems | Robotics Enthusiast</p>
+    <p>Graduate C++ Developer | Embedded Systems | Robotics and Automation</p>
   </header>
 
   <section>
@@ -58,16 +106,19 @@
     <h2>Projects</h2>
     <ul>
       <li>
+        <img src="https://via.placeholder.com/800x200.png?text=Multithreaded+File+Parser" alt="Multithreaded File Parser" class="project-image" />
         <strong>Multithreaded File Parser</strong><br />
         Built with C++ and STL. Uses smart pointers and threads to parse files concurrently. <br />
-        <a href="https://github.com/augustineaguworumba/MoviesCollection" target="_blank">View on GitHub</a>
+        <a href="https://github.com/augustineaguworumba/file-parser" target="_blank">View on GitHub</a>
       </li>
       <li>
+        <img src="https://via.placeholder.com/800x200.png?text=Custom+Memory+Allocator" alt="Memory Allocator" class="project-image" />
         <strong>Custom Memory Allocator</strong><br />
         A memory management system designed to avoid fragmentation and speed up allocations. <br />
         <a href="https://github.com/augustineaguworumba/memory-allocator" target="_blank">View on GitHub</a>
       </li>
       <li>
+        <img src="https://via.placeholder.com/800x200.png?text=Chat+App" alt="Chat App" class="project-image" />
         <strong>Socket-Based Chat App</strong><br />
         Client-server chat system with basic encryption and error handling in C++. <br />
         <a href="https://github.com/augustineaguworumba/chat-app" target="_blank">View on GitHub</a>
@@ -75,7 +126,7 @@
     </ul>
 
     <h2>Contact</h2>
-    <p>Email: augustine@example.com</p>
+    <p>Email: augustine.aguworumba@gmail.com</p>
     <p>LinkedIn: <a href="https://linkedin.com/in/augustine-aguworumba" target="_blank">linkedin.com/in/yourprofile</a></p>
     <p>GitHub: <a href="https://github.com/augustineaguworumba" target="_blank">github.com/yourusername</a></p>
   </section>
@@ -85,4 +136,3 @@
   </footer>
 </body>
 </html>
-
